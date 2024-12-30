@@ -5,11 +5,11 @@ const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
 // Enable CORS untuk semua domain (bisa diatur lebih spesifik jika diperlukan)
 app.use(cors({
-    origin: 'http://localhost:3001',  // Tentukan URL aplikasi Next.js Anda
+    origin: 'http://localhost:3000',  // Tentukan URL aplikasi Next.js Anda
   }));
 
   // Menyajikan file statis dari folder 'uploads'
